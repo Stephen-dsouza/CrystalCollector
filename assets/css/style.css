@@ -1,0 +1,39 @@
+body {
+    background-image: url("../images/background.png");
+
+}
+
+
+
+header {
+    display: block;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: black;
+    align-content: center;
+    background-color: teal;
+    padding: 10px 100px;
+    margin: 10px auto;
+    width: 100%;
+
+}
+
+.random{
+    background-color: aquamarine;
+}
+
+.header{
+    display: block;
+    background-color: orange;
+    margin: 0 auto;
+}
+
+.game{
+    display: block;
+    background-color: green;
+    margin-right: 300px;
+    padding-right: 50%;
+}
+.py-sm-4{
+    paddin
+}
