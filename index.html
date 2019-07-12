@@ -14,7 +14,7 @@
 
 <body>
 
-  
+
 
 
 
@@ -22,40 +22,47 @@
     <div class="container ">
       <h1 class="header">CRYSTAL COLLECTOR!</h1>
       <div class="game">
-      <p> You will be given a random number at the start of the game.
-        <br>
-        There are 4 crystals below.BY clicking in the crystal you will add aspecific amount of points to your specific score.
-        <br>
-        You win the game by matching the total score to random number,You loose the game if you total score goes above the random number.
-        <br>
-        The value of the each crystal is hidden from you until you click on it.
-        <br>
-        Each time when the game starts ,The game will change the value of the crystal. </p>
+        <p> You will be given a random number at the start of the game.
+          <br>
+          There are 4 crystals below.BY clicking in the crystal you will add aspecific amount of points to your specific
+          score.
+          <br>
+          You win the game by matching the total score to random number,You loose the game if you total score goes above
+          the random number.
+          <br>
+          The value of the each crystal is hidden from you until you click on it.
+          <br>
+          Each time when the game starts ,The game will change the value of the crystal. </p>
+          
       </div>
-        <div class="row mb-3 random">
-          <div class="col-sm-6 themed-grid-col crystal1">
-            <p id="randomv">YOUR TARGET IS: </p></div>
-          <div class="col-sm-4 themed-grid-col crystal2">
-            <p id="wins">WINS:</p>
-            <p id="loss">LOSSES:</p>
-          </div>
+      <div class="row mb-3 random">
+        <div class="col-sm-6 themed-grid-col crystal1">
+          <p id="randomv">YOUR TARGET IS: </p>
+          <p id="currentcount"></p>
+          <div class="cancelButton"></div>
         </div>
+        
+        <div class="col-sm-4 themed-grid-col crystal2">
+          <p id="wins">WINS:</p>
+          <p id="loss">LOSSES:</p>
+        </div>
+      </div>
 
-        <div class="row mb-3">
-          <div class="col-sm-2 themed-grid-col crystal1">
-            <img id="c1" src="./assets/images/blue.png" alt="" /></div>
-          <div class="col-sm-2 themed-grid-col crystal2">
-            <img id="c2 " src="./assets/images/green.png" alt="" /></div>
-          <div class="col-sm-2 themed-grid-col crystal3">
-            <img id="c3 " src="./assets/images/red.png" alt="" /></div>
-          <div class="col-sm-2 themed-grid-col crystal4">
-            <img id="c4 " src="./assets/images/yellow.png" alt="" /></div>
-        </div>
+      <div class="row mb-3">
+        <div class="col-sm-2 themed-grid-col crystal1">
+          <img id="c1" src="./assets/images/blue.png" alt="" /></div>
+        <div class="col-sm-2 themed-grid-col crystal2">
+          <img id="c2" src="./assets/images/green.png" alt="" /></div>
+        <div class="col-sm-2 themed-grid-col crystal3">
+          <img id="c3" src="./assets/images/red.png" alt="" /></div>
+        <div class="col-sm-2 themed-grid-col crystal4">
+          <img id="c4" src="./assets/images/yellow.png" alt="" /></div>
+      </div>
 
 
 
     </div> <!-- /container -->
-    
+
     <script src="https://code.jquery.com/jquery-3.4.1.js"
       integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="./assets/javascript/jquery.js"></script>
