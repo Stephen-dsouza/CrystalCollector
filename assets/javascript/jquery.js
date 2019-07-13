@@ -60,7 +60,24 @@ $(document).ready(function () {
             score = 0;
             clickcount = 0;
             loss = 0;
+            crys1 = crystall();
+            crys2 = crystall();
+            crys3 = crystall();
+            crys4 = crystall();
             
+            
+      }
+
+      function check(clicks){
+            if (clicks< coguess) {
+                  $("#currentcount").text("CLICK COUNT IS: " + clicks);
+            } else if (clicks> coguess) {
+                  isloss();
+            } else if (clicks == coguess) {
+                  iswin();
+            } else {
+                  resets();
+            }
       }
 
       //for the 4 crystals we take the click event function.
@@ -70,56 +87,22 @@ $(document).ready(function () {
 //based on the clic,check if the click > computerguess or < or = .
             if (id == "c1") {
                   clickcount = crys1 + clickcount;
-                  if (clickcount < coguess) {
-                        $("#currentcount").text("CLICK COUNT IS: " + clickcount);
-                  } else if (clickcount > coguess) {
-                        isloss();
-                  } else if (clickcount == coguess) {
-                        iswin();
-                  } else {
-                        resets();
-                  }
-
+                 check(clickcount);
 
             } else if (id == "c2") {
                   clickcount = crys2 + clickcount;
-                  if (clickcount < coguess) {
-                        $("#currentcount").text("CLICK COUNT IS: " + clickcount);
-                  } else if (clickcount > coguess) {
-                        isloss();
-                  } else if (clickcount == coguess) {
-                        iswin();
-                  } else {
-                        resets();
-                  }
+                  check(clickcount);
 
 
             } else if (id == "c3") {
                   clickcount = crys3 + clickcount;
-                  if (clickcount < coguess) {
-                        $("#currentcount").text("CLICK COUNT IS: " + clickcount);
-                  } else if (clickcount > coguess) {
-                        isloss();
-                  } else if (clickcount == coguess) {
-                        iswin();
-                  } else {
-                        resets();
-                  }
-
+                  check(clickcount);
 
             } else if (id == "c4") {
                   clickcount = crys4 + clickcount;
-                  if (clickcount < coguess) {
-                        $("#currentcount").text("CLICK COUNT IS: " + clickcount);
-                  } else if (clickcount > coguess) {
-                        isloss();
-                  } else if (clickcount == coguess) {
-                        iswin();
-                  } else {
-                        resets();
-                  }
+                  check(clickcount);
             }
-            else{resets();}
+            else{resets()}
             
       });
 
