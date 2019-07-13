@@ -18,19 +18,26 @@ header {
 
 }
 
-.random{
+.random {
     background-color: aquamarine;
+    margin-right: 350px;
+    margin-left: 0px;
+    margin-top: 50px;
 }
 
-.header{
+.header {
     display: block;
     background-color: orange;
-    margin: 0 auto;
+    margin-right: 350px;
+    margin-left: 0px;
 }
 
-.game{
+.game {
     display: block;
     background-color: green;
-    margin-right: 300px;
-    padding-right: 50%;
+    margin-right: 350px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: bold;
+
 }

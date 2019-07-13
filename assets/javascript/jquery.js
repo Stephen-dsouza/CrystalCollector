@@ -55,17 +55,18 @@ $(document).ready(function () {
             crys3 = crystall();
             crys4 = crystall();
       }
+
       function reset() {
             score = 0;
             clickcount = 0;
             loss = 0;
       }
 
-      //for the 4 crystals we take the click event function
+      //for the 4 crystals we take the click event function.
       $("#c1,#c2,#c3,#c4").click(function () {
             var id = this.id;
-            // If the click count < than the computer guess and crystal 1 is selected 
-
+           
+//based on the clic,check if the click > computerguess or < or = .
             if (id == "c1") {
                   clickcount = crys1 + clickcount;
                   if (clickcount < coguess) {
@@ -78,7 +79,7 @@ $(document).ready(function () {
                         reset();
                   }
 
-                  
+
             } else if (id == "c2") {
                   clickcount = crys2 + clickcount;
                   if (clickcount < coguess) {
@@ -91,9 +92,8 @@ $(document).ready(function () {
                         reset();
                   }
 
-                 
-            }
-            else if (id == "c3") {
+
+            } else if (id == "c3") {
                   clickcount = crys3 + clickcount;
                   if (clickcount < coguess) {
                         $("#currentcount").text("CLICK COUNT IS: " + clickcount);
@@ -105,9 +105,8 @@ $(document).ready(function () {
                         reset();
                   }
 
-               
-            }
-            else if (id == "c4") {
+
+            } else if (id == "c4") {
                   clickcount = crys4 + clickcount;
                   if (clickcount < coguess) {
                         $("#currentcount").text("CLICK COUNT IS: " + clickcount);
@@ -119,13 +118,5 @@ $(document).ready(function () {
                         reset();
                   }
             }
-
-            console.log(coguess);
-            console.log(score);
-                  console.log(clickcount);
-                  console.log("crystal1" +crys1);
-                  console.log(crys2);
-                  console.log(crys3);
-                  console.log(crys4);
       });
 });
