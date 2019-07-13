@@ -56,16 +56,17 @@ $(document).ready(function () {
             crys4 = crystall();
       }
 
-      function reset() {
+      function resets() {
             score = 0;
             clickcount = 0;
             loss = 0;
+            
       }
 
       //for the 4 crystals we take the click event function.
-      $("#c1,#c2,#c3,#c4").click(function () {
+      $("#c1,#c2,#c3,#c4,#resetgame").click(function() {
             var id = this.id;
-           
+          
 //based on the clic,check if the click > computerguess or < or = .
             if (id == "c1") {
                   clickcount = crys1 + clickcount;
@@ -76,7 +77,7 @@ $(document).ready(function () {
                   } else if (clickcount == coguess) {
                         iswin();
                   } else {
-                        reset();
+                        resets();
                   }
 
 
@@ -89,7 +90,7 @@ $(document).ready(function () {
                   } else if (clickcount == coguess) {
                         iswin();
                   } else {
-                        reset();
+                        resets();
                   }
 
 
@@ -102,7 +103,7 @@ $(document).ready(function () {
                   } else if (clickcount == coguess) {
                         iswin();
                   } else {
-                        reset();
+                        resets();
                   }
 
 
@@ -115,8 +116,12 @@ $(document).ready(function () {
                   } else if (clickcount == coguess) {
                         iswin();
                   } else {
-                        reset();
+                        resets();
                   }
             }
+            else{resets();}
+            
       });
+
+      
 });
